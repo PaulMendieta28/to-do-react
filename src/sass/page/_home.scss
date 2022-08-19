@@ -1,0 +1,74 @@
+.Home{
+    background: linear-gradient( to right, $pink-light 20%, $purple-light);
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+
+	&-container {
+		display: block;
+		width: 600px;
+		height: fit-content;
+		margin-top: 150px;
+		border: 4px solid $black;
+		padding:0px 10px 10px 10px;
+		border-radius:10px;
+		background-color: $degradado;
+	}
+
+	&-title {
+		font-family:  $font-primary;
+		color: $white;
+		font-size: 40px;
+		padding:  20px 0;
+		text-align: center;
+
+		&::after {
+			background: $black;
+			content: '';
+			display: block;
+			height: 2px;
+			margin: 0 auto;
+			margin-top: 20px;
+			width: 400px;
+		}
+
+		&.second {
+			font-size: 30px;
+			text-align: start;
+
+			&::after {
+				background: $black;
+				content: '';
+				display: block;
+				height: 2px;
+				margin: 5px 2px 0px 2px;
+				margin-top: 5px;
+				width: 580px;
+			}
+		}
+	}
+
+	&-input {
+		background-color: $gray;
+		border-radius: 10px;
+		border: none;
+		font-size: 18px;
+		height: 40px;
+		margin: 25px;
+		transition: all ease-in-out 0.3s;
+		width: 400px;
+		padding-left: 15px;
+		
+
+		&:focus {
+			background-color: $degradado;
+			color: $white;
+		}
+
+		&::placeholder {
+			letter-spacing: 2px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
